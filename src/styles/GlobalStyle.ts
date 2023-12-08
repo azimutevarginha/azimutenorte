@@ -24,6 +24,7 @@ export const colors = {
     blue: "#062D54",
     azul: "#062D54",
     laranjaC: "#FFD699",
+    laranjaM: "#FFA552",
     laranjaE: "#FF6100",
     branco: "#ffff"
 }

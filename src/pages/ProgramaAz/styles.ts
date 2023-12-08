@@ -2,9 +2,10 @@ import styled from "styled-components"
 import { colors } from "../../styles/GlobalStyle"
 
 export const Main = styled.nav`
-    padding: 2rem;
+    padding: 1rem;
     height: 100%;
-    margin-top: 2rem;
+    padding-top: 2rem;
+    background-color: ${colors.branco};
     background-image: url("/triangulos.png");
     background-size: cover;
     background-repeat: no-repeat;
@@ -39,7 +40,7 @@ export const Main = styled.nav`
     }
     ul#cont {
         justify-content: center;
-        flex-direction: center;
+        align-items: center;
     }
     ul#Titulo {
         display: flex;
@@ -57,7 +58,7 @@ export const Main = styled.nav`
 
 `
 export const Top = styled.li`
-    padding-bottom: 3rem;
+    padding: 4rem 0;
     ul{
         display: flex;
         flex-direction: row;
@@ -72,35 +73,44 @@ export const Top = styled.li`
 `
 
 export const Mid = styled.li`
-    padding-bottom: 3rem;
+    padding: 4rem 0;
     ul{
         display: flex;
         flex-direction: row;
         img {
             height: 30rem;
+            padding: 2rem;
         }
     }
 
 `
 
 export const Und = styled.li`
-    padding-bottom: 3rem;
+    padding: 4rem 0;
     ul{
         display: flex;
         flex-direction: row;
+    }
+    img {
+            height: 30rem;
+            padding: 2rem;
     }
 
 `
 
 export const Part = styled.li`
-ul{
+    ul{
         display: flex;
         flex-direction: row;
-}
+    }
+    img {
+        height: 30rem;
+        padding: 2rem 5rem;
+    }
 
 `
 
 export const Espaco = styled.div`
-    padding: 0 10rem;
+    padding: 0 7rem;
 `
 
