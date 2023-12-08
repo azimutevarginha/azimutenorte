@@ -1,4 +1,3 @@
-import Orientista from "../../assets/Orientista.png"
 import styled from "styled-components"
 import { colors } from "../../styles/GlobalStyle"
 
@@ -9,16 +8,19 @@ export const SaibaM = styled.nav`
     background-image: linear-gradient(${colors.laranjaC}, ${colors.laranjaE});
     align-items: center;
     justify-content: center;
-    width: 100%;
+    padding-top: 3rem;
+    height: 100%;
+    width: 100vw;
     ul {
         list-style-type: none;
         width: 100%;
         li#titulo {
+            padding: 0rem;
             border-bottom-style: solid;
             border-bottom-color: ${colors.azul};
             border-bottom-width: 0.3rem;
             align-items: center;
-            height: 4.4rem;
+            height: 3.5rem;
             width: 100%;
             a {
                 text-decoration: none;
@@ -27,16 +29,24 @@ export const SaibaM = styled.nav`
                 font-size: 4rem;
                 width: 100%;
                 padding-left: 2rem;
+                padding-bottom: 0rem;
             }
         }
         li nav#itens{
             background-image: url("/Orientista.png");
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: cover;
             display: flex;
             width: 100%;
+            height: 100%;
             flex-direction: row;
             align-items: center;
             justify-content: center;
             padding: 4rem;
+            @media(max-width: 1150px){
+                flex-direction: column;
+            }
         }
     }
 `
@@ -45,7 +55,7 @@ export const Quadros = styled.nav`
     ul {
         list-style-type: none;
         li#Cont {
-            padding: 3rem;
+            padding: 3.5rem;
             border: 0.3rem solid ${colors.branco};
             border-radius: 1rem;
             ul#C {
@@ -89,6 +99,7 @@ export const Quadros = styled.nav`
                     a {
                         font-family: "Passion One";
                         font-size: 2.5rem;
+                        text-decoration: none;
                         color: ${colors.branco};
                     }
                 }
@@ -98,6 +109,7 @@ export const Quadros = styled.nav`
             font-family: "Passion One";
             font-size: 2.5rem;
             color: ${colors.branco};
+            padding: 1rem;
         }
         li#nome h3{
             color: ${colors.azul};
@@ -113,6 +125,8 @@ export const Quadros = styled.nav`
             list-style-type: none;
             display: flex;
             flex-direction: row;
+            align-items: center;
+            justify-content: center;
             h3 {
                 color: ${colors.branco};
                 font-family: "Passion One";
@@ -121,10 +135,27 @@ export const Quadros = styled.nav`
             }
         }
 
-
     }
 `
 
 export const Espaco = styled.nav`
     padding: 7rem;
+
+    @media(max-width: 1400px) {
+        padding: 5rem;
+    }
+
+    @media(max-width: 1350px) {
+        padding: 3rem;
+    }
+
+    @media(max-width: 1300px) {
+        padding: 1rem;
+    }
+
+    @media(max-width: 1250px) {
+        padding: 0rem;
+        display: none;
+    }
+  
 `

@@ -1,9 +1,0 @@
-
-
-export function Page(){
-
-    return (
-        <>
-        </>
-    )
-}

@@ -1,2 +1,3 @@
 export {Header as ComponentHeader} from "./ComponentHeader"
 export {Footer as ComponentFooter} from "./ComponentFooter"
+export { saiba_mais as ComponentSaibaMais } from "./SaibaMais"
