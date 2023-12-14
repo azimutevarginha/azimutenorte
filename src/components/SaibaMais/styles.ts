@@ -44,7 +44,7 @@ export const SaibaM = styled.nav`
             align-items: center;
             justify-content: center;
             padding: 4rem;
-            @media(max-width: 1150px){
+            @media(max-width: 1200px){
                 flex-direction: column;
             }
         }
@@ -58,6 +58,15 @@ export const Quadros = styled.nav`
             padding: 3.5rem;
             border: 0.3rem solid ${colors.branco};
             border-radius: 1rem;
+            @media(max-width: 750px){
+                padding: 2rem;
+            }
+            @media(max-width: 680px){
+                padding: 1rem;
+            }
+            @media(max-width: 520pxpx){
+                padding: 0;
+            }
             ul#C {
                 display: flex;
                 flex-direction: column;

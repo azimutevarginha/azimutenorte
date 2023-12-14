@@ -5,7 +5,7 @@ import Dupla from "../../img/dupla.png"
 import Pessoas from "../../img/turminha.png"
 
 
-export function Page() {
+export function ProgAz() {
 
     return (
         <>
@@ -13,49 +13,51 @@ export function Page() {
                 <ul id="main">
                     <S.Top>
                         <ul id="cont">
-                            <li>
-                                <ul id="Titulo">
-                                    <li>
-                                        <h1>Programa<br />Azimute Norte</h1>
-                                    </li>
-                                    <li>
-                                        <h2>Você conhece o programa de extensão<br />do CEFET-MG? Venha conhecer!</h2>
-                                    </li>
-                                </ul>
+                            <li id="Texto">
+                                <div>
+                                    <ul id="Titulo">
+                                        <li>
+                                            <h1>Programa Azimute Norte</h1>
+                                        </li>
+                                        <li>
+                                            <h2>Você conhece o programa de extensão do CEFET-MG? Venha conhecer!</h2>
+                                        </li>
+                                    </ul>
+                                    <S.Espacinho />
+                                </div>
                             </li>
                             <li>
                                 <S.Espaco />
                             </li>
-                            <li>
-                                <img src={Az} alt="Logo" />
+                            <li id="Img">
+                                <div>
+                                    <S.Espacinho />
+                                    <img src={Az} alt="Logo" />
+                                </div>
                             </li>
                         </ul>
                     </S.Top>
 
                     <S.Mid>
                         <ul id="cont">
-                            <li>
-                                <img src={Nadia} alt="Nádia [foto]" />
+                            <li id="Img">
+                                <div>
+                                    <S.Espacinho />
+                                    <img src={Nadia} alt="Nádia [foto]" />
+                                </div>
                             </li>
-                            <li>
-                                <ul id="texto">
-                                    <li>
-                                        <h3>Onde surgiu?</h3>
-                                    </li>
-                                    <li>
-                                        <p>O programa surgiu em Divinópolis, em 2011,<br />
-                                            quando o esporte Orientação já era mais<br />
-                                            popular entre o campus e a comunidade<br />
-                                            externa. Foi encabeçado por Nádia Cristina da<br />
-                                            Silva Mello, professora doutora em Geografia<br />
-                                            do campus. Desde então o programa ampliou e<br />
-                                            popularizou-se, sendo transformado em<br />
-                                            Programa de Extensão em 2016, contando com<br />
-                                            o apoio de clubes de orientação, como o CODIV<br />
-                                            e o COVAR. Atualmente, participam os campus<br />
-                                            CEFET-MG de Divinópolis, Varginha e Araxá.</p>
-                                    </li>
-                                </ul>
+                            <li id="Texto">
+                                <div>
+                                    <ul id="texto">
+                                        <li>
+                                            <h3>Onde surgiu?</h3>
+                                        </li>
+                                        <li>
+                                            <p>O programa surgiu em Divinópolis, em 2011, quando o esporte Orientação já era mais popular entre o campus e a comunidade externa. Foi encabeçado por Nádia Cristina da Silva Mello, professora doutora em Geografia do campus. Desde então o programa ampliou e popularizou-se, sendo transformado em Programa de Extensão em 2016, contando com o apoio de clubes de orientação, como o CODIV e o COVAR. Atualmente, participam os campus CEFET-MG de Divinópolis, Varginha e Araxá.</p>
+                                        </li>
+                                    </ul>
+                                    <S.Espacinho />
+                                </div>
                             </li>
                             <li>
                                 <S.Espaco />
@@ -65,52 +67,51 @@ export function Page() {
 
                     <S.Und>
                         <ul id="cont">
-                            <li>
-                                <ul id="texto">
-                                    <li>
-                                        <h3>Como funciona?</h3>
-                                    </li>
-                                    <li>
-                                        <p>O Programa de Extensão Azimute Norte desenvolve<br />
-                                            diversas atividades práticas e teóricas para<br />
-                                            apresentar e inserir os alunos e a comunidade<br />
-                                            externa no esporte Orientação, que beneficia o<br />
-                                            físico e o mental, ou seja, incentiva e aprimora a<br />
-                                            nossa capacidade cognitiva e a qualidade de vida.<br />
-                                            Também tem, dentre outros objetivos, propiciar<br />
-                                            eventos esportivos e científicos que aspirem ao<br />
-                                            exercício do esporte orientação e incentivar o<br />
-                                            desenvolvimento tecnológico para o desempenho de<br />
-                                            atividades relativas ao esporte e ao programa.</p>
-                                    </li>
-                                </ul>
+                            <li id="Texto">
+                                <div>
+                                    <ul id="texto">
+                                        <li>
+                                            <h3>Como funciona?</h3>
+                                        </li>
+                                        <li>
+                                            <p>O Programa de Extensão Azimute Norte desenvolve diversas atividades práticas e teóricas para apresentar e inserir os alunos e a comunidade externa no esporte Orientação, que beneficia o físico e o mental, ou seja, incentiva e aprimora a nossa capacidade cognitiva e a qualidade de vida. Também tem, dentre outros objetivos, propiciar eventos esportivos e científicos que aspirem ao exercício do esporte orientação e incentivar o desenvolvimento tecnológico para o desempenho de atividades relativas ao esporte e ao programa.</p>
+                                        </li>
+                                    </ul>
+                                    <S.Espacinho />
+                                </div>
                             </li>
                             <li>
                                 <S.Espaco />
                             </li>
-                            <li>
-                                <img src={Dupla} alt="Dupla fazendo exercícios" />
+                            <li id="Img">
+                                <div>
+                                    <S.Espacinho />
+                                    <img src={Dupla} alt="Dupla fazendo exercícios" />
+                                </div>
                             </li>
                         </ul>
                     </S.Und>
 
                     <S.Part>
                         <ul id="cont">
-                            <li>
-                                <img src={Pessoas} alt="Pessoas participando [Ilustração]" />
+                            <li id="Img">
+                                <div>
+                                    <S.Espacinho />
+                                    <img src={Pessoas} alt="Pessoas participando [Ilustração]" />
+                                </div>
                             </li>
-                            <li>
-                                <ul id="Titulo">
-                                    <li>
-                                        <h1>Participe</h1>
-                                    </li>
-                                    <li>
-                                        <h2>Gostou das propostas do programa?<br />
-                                            Há muitas maneiras diferentes de<br />
-                                            participar. Venha conhecê-las<br />
-                                            <a href='/Participe'>clicando aqui.</a></h2>
-                                    </li>
-                                </ul>
+                            <li id="Texto">
+                                <div>
+                                    <ul id="Titulo">
+                                        <li>
+                                            <h1>Participe</h1>
+                                        </li>
+                                        <li>
+                                            <h2>Gostou das propostas do programa? Há muitas maneiras diferentes de participar. Venha conhecê-las <a href='/Participe'>clicando aqui.</a></h2>
+                                        </li>
+                                    </ul>
+                                    <S.Espacinho />
+                                </div>
                             </li>
                             <li>
                                 <S.Espaco />

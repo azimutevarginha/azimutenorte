@@ -44,7 +44,7 @@ export function saiba_mais() {
                             <img src={Email} alt="E-mail icon" />
                             </li>
                             <li id="email">
-                              <h3>azimutenortevarginha@gmail.com</h3>
+                              <h3>azimutenorte@gmail.com</h3>
                             </li>
                           </ul>
                         </li>
