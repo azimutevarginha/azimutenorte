@@ -6,7 +6,7 @@ import {FiMenu} from "react-icons/fi"
 
 
 export const titulosSobre = ["Orientação", "Programa"];
-export const linksSobre = ["*", "*"]
+export const linksSobre = ["/orientacao",""]
 
 export function NavBar(){
 

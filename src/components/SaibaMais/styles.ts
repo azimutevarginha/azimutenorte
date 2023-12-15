@@ -64,7 +64,7 @@ export const Quadros = styled.nav`
             @media(max-width: 680px){
                 padding: 1rem;
             }
-            @media(max-width: 520pxpx){
+            @media(max-width: 520px){
                 padding: 0;
             }
             ul#C {
