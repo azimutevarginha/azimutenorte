@@ -32,7 +32,7 @@ export function ProgAz() {
                             <li id="Img">
                                 <div>
                                     <S.Espacinho />
-                                    <img src={Az} alt="Logo" />
+                                    <img src={Az} alt="Logo" data-aos="fade-up" />
                                 </div>
                             </li>
                         </ul>
@@ -43,7 +43,7 @@ export function ProgAz() {
                             <li id="Img">
                                 <div>
                                     <S.Espacinho />
-                                    <img src={Nadia} alt="Nádia [foto]" />
+                                    <img src={Nadia} alt="Nádia [foto]" data-aos="fade-up"/>
                                 </div>
                             </li>
                             <li id="Texto">
@@ -86,7 +86,7 @@ export function ProgAz() {
                             <li id="Img">
                                 <div>
                                     <S.Espacinho />
-                                    <img src={Dupla} alt="Dupla fazendo exercícios" />
+                                    <img src={Dupla} alt="Dupla fazendo exercícios [Ilustração]" data-aos="fade-up"/>
                                 </div>
                             </li>
                         </ul>
@@ -97,7 +97,7 @@ export function ProgAz() {
                             <li id="Img">
                                 <div>
                                     <S.Espacinho />
-                                    <img src={Pessoas} alt="Pessoas participando [Ilustração]" />
+                                    <img src={Pessoas} alt="Pessoas participando [Ilustração]"data-aos="fade-up" />
                                 </div>
                             </li>
                             <li id="Texto">

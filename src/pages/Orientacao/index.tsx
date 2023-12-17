@@ -1,8 +1,8 @@
 import * as S from './styles'
 import Orientista from "../../img/orientista.png"
 import Par from "../../img/parceiras.png"
-import Dupla from "../../img/dupla.png"
-import Pessoas from "../../img/turminha.png"
+import Prisma from "../../img/prisma.png"
+import Garotas from "../../img/garotas.png"
 
 
 export function EspOri() {
@@ -11,7 +11,7 @@ export function EspOri() {
         <>
             <S.Main>
                 <ul id="main">
-                    <S.Top>
+                    <S.Top data-aos="Anima">
                         <ul id="cont">
                             <li id="Texto">
                                 <div data-aos="AnimaT">
@@ -30,20 +30,20 @@ export function EspOri() {
                                 <S.Espaco />
                             </li>
                             <li id="Img">
-                                <div>
+                                <div data-aos="AnimaI">
                                     <S.Espacinho />
-                                    <img id="img" src={Orientista} alt="Orientista [Ilustração]" />
+                                    <img id="img" src={Orientista} alt="Orientista [Ilustração]"/>
                                 </div>
                             </li>
                         </ul>
                     </S.Top>
 
-                    <S.Mid>
+                    <S.Mid data-aos="Anima">
                         <ul id="cont">
                             <li id="Img">
-                                <div>
+                                <div data-aos="AnimaI">
                                     <S.Espacinho />
-                                    <img id="img" src={Par} alt="Mulheres praticando orientação com bússolas e mapas [Ilustração]" />
+                                    <img id="img" src={Par} alt="Mulheres praticando orientação com bússolas e mapas [Ilustração]"/>
                                 </div>
                             </li>
                             <li id="Texto">
@@ -65,7 +65,7 @@ export function EspOri() {
                         </ul>
                     </S.Mid>
 
-                    <S.Und>
+                    <S.Und data-aos="Anima">
                         <ul id="cont">
                             <li id="Texto">
                                 <div data-aos="AnimaT">
@@ -84,20 +84,20 @@ export function EspOri() {
                                 <S.Espaco />
                             </li>
                             <li id="Img">
-                                <div>
+                                <div data-aos="AnimaI">
                                     <S.Espacinho />
-                                    <img id="img" src={Dupla} alt="Dupla fazendo exercícios" />
+                                    <img id="img" src={Prisma} alt="Prisma posicionado em meio a vegetação [Ilustração]"/>
                                 </div>
                             </li>
                         </ul>
                     </S.Und>
 
-                    <S.Part>
+                    <S.Part data-aos="Anima">
                         <ul id="cont">
                             <li id="Img">
-                                <div>
+                                <div data-aos="AnimaI">
                                     <S.Espacinho />
-                                    <img id="img" src={Pessoas} alt="Pessoas participando [Ilustração]" />
+                                    <img id="img" src={Garotas} alt="Meninas orientistas [Ilustração]"/>
                                 </div>
                             </li>
                             <li id="Texto">

@@ -99,6 +99,43 @@ export const Main = styled.nav`
         }
     }
 
+    [data-aos="Anima"] {
+        @media(min-width: 1180px){
+            opacity: 0;
+            filter: blur(5px);
+            transform: translateY(100%);
+            transition: all;
+
+            &.aos-animate {
+                opacity: 1;
+                filter: blur(0);
+                transform: translateY(0);
+                transition-duration: 2000ms;
+            }
+        }
+    }
+
+    [data-aos="AnimaI"] {
+        @media(max-width: 1180px){
+            opacity: 0;
+            filter: blur(5px);
+            transform: translateX(100%);
+            transition: all;
+
+            &.aos-animate {
+                opacity: 1;
+                filter: blur(0);
+                transform: translateX(0);
+                @media(min-width: 840px){
+                    transition-duration: 2000ms;
+                }
+            }
+        }
+        @media(max-width: 840px){
+            transition-duration: 1000ms;
+        }
+    }
+
     [data-aos="AnimaT"] {
         @media(max-width: 1180px){
             opacity: 0;
@@ -110,7 +147,9 @@ export const Main = styled.nav`
                 opacity: 1;
                 filter: blur(0);
                 transform: translateX(0);
-                transition-duration: 2500ms;
+                @media(min-width: 840px){
+                    transition-duration: 2000ms;
+                }
             }
         }
         @media(max-width: 840px){
@@ -158,8 +197,8 @@ export const Und = styled.li`
         flex-direction: row;
     }
     img {
-            height: 30rem;
-            padding: 2rem;
+        height: 30rem;
+        padding: 2rem;
     }
 
 `
@@ -170,7 +209,7 @@ export const Part = styled.li`
         flex-direction: row;
     }
     img {
-        height: 30rem;
+        width: 35rem;
         padding: 2rem 5rem;
     }
     a {
