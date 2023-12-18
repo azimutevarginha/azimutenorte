@@ -1,8 +1,10 @@
 import { createGlobalStyle } from "styled-components"
 
+
 export const GlobalStyle = createGlobalStyle`
 
 @import url('https://fonts.googleapis.com/css2?family=Libre+Franklin:ital,wght@0,100;0,700;1,100&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Passion+One:wght@400;700;900&display=swap');
 
 *{
     margin: 0;
@@ -11,14 +13,11 @@ export const GlobalStyle = createGlobalStyle`
     border: 0;
     box-sizing: border-box;
     font-family: 'Libre Franklin', sans-serif;
+    
 }
-
-body{
-    background-color: #f9f9f9;
-}
-
 
 `
+
 
 export const colors = {
     blue: "#062D54",
@@ -28,4 +27,3 @@ export const colors = {
     laranjaE: "#FF6100",
     branco: "#ffff"
 }
-

@@ -13,7 +13,7 @@ export const Main = styled.nav`
     height: 100%;
     padding-top: 2rem;
     background-color: ${colors.branco};
-    background-image: url("/triangulos.png");
+    background-image: url('/triangulos.png');
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center top;

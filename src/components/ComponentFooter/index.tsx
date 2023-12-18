@@ -1,6 +1,6 @@
 import * as style from "./style"
 import cefet_logo from "../../img/cefet-logo.svg"
-import logo_azimute from "../../img/logocinza.png"
+import logo_azimute from "../../img/Logo_Azimute 2.svg"
 import azimutenorte from "../../img/azimute_logo.svg"
 
 export function Footer(){

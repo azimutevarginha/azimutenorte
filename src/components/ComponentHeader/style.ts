@@ -2,7 +2,7 @@ import styled from "styled-components"
 import { colors } from "../../styles/GlobalStyle"
  
 export const Header = styled.header`
-    width: 100vw;
+    width: 100%;
     height: 5rem;
     background-color: ${colors.blue};
     color: white;

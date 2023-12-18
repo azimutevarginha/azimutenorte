@@ -3,13 +3,14 @@ import Camiseta from "../../img/camiseta.png"
 import Voluntaria from "../../img/voluntaria.png"
 import Corredores from "../../img/corredores.png"
 import Ideia from "../../img/ideia.png"
+import { ComponentHeader, ComponentFooter, ComponentSaibaMais} from "../../components"
 
 export function Part() {
 
     return (
         <>
+            <ComponentHeader />
             <S.Main>
-
                 <S.Top data-aos="Anima">
                     <li>
                         <div id="Titulo" data-aos="Esquerda">
@@ -49,6 +50,8 @@ export function Part() {
                 </S.Participe>
 
             </S.Main>
+            <ComponentSaibaMais />
+            <ComponentFooter />
         </>
     )
 }
