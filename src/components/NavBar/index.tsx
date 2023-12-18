@@ -6,11 +6,16 @@ import {FiMenu} from "react-icons/fi"
 
 
 export const titulosSobre = ["Orientação", "Programa"];
-export const linksSobre = ["/orientacao","/"]
+export const linksSobre = ["/orientacao","/"];
+import { useNavigate } from 'react-router-dom';
 
 export function NavBar(){
-
+    const navigate = useNavigate();
     const [menuIsVisible, setMenuIsVisible] = useState(false);
+
+    const handleClick = () => {
+        navigate('/participe');
+    }
 
     return(
         <style.NavBar>
@@ -18,7 +23,7 @@ export function NavBar(){
                 <ul className="Nav">
                     <Gaveta categoria="SOBRE" titulos={titulosSobre} links={linksSobre}/>
                 </ul>
-                <button className="participe">PARTICIPE!</button>
+                <button className="participe" onClick = {handleClick} >PARTICIPE!</button>
             </section>
             <FiMenu size={45} onClick = {()=>setMenuIsVisible(true)} className="menuHamburger"/>
             <MenuHamburger menuIsVisible={menuIsVisible} setMenuIsVisible={setMenuIsVisible}/>

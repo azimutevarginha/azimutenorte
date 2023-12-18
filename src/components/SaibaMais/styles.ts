@@ -1,8 +1,53 @@
 import styled from "styled-components"
 import { colors } from "../../styles/GlobalStyle"
+import AOS from 'aos'
+import 'aos/dist/aos.css'
+AOS.init({
+    once: false, 
+    mirror: true
+});
 
 export const SaibaM = styled.nav`
-  /* Cabeçalho */
+    [data-aos="AnimaD"] {
+        opacity: 0;
+        filter: blur(5px);
+        transform: translateX(100%);
+        transition: all;
+
+        &.aos-animate {
+            opacity: 1;
+            filter: blur(0);
+            transform: translateX(0);
+            @media(min-width: 840px){
+                transition-duration: 2000ms;
+            }
+        }
+        
+        @media(max-width: 840px){
+            transition-duration: 1000ms;
+        }
+    }
+
+    [data-aos="AnimaE"] {
+        opacity: 0;
+        filter: blur(5px);
+        transform: translateX(-100%);
+        transition: all;
+
+        &.aos-animate {
+            opacity: 1;
+            filter: blur(0);
+            transform: translateX(0);
+            @media(min-width: 840px){
+                transition-duration: 2000ms;
+            }
+        }
+        
+        @media(max-width: 840px){
+            transition-duration: 1000ms;
+        }
+    }
+
     display: flex;
     flex-direction: row;
     background-image: linear-gradient(${colors.laranjaC}, ${colors.laranjaE});
@@ -67,6 +112,7 @@ export const Quadros = styled.nav`
             @media(max-width: 520px){
                 padding: 0;
             }
+
             ul#C {
                 display: flex;
                 flex-direction: column;
@@ -101,8 +147,8 @@ export const Quadros = styled.nav`
                 span {
                     padding: 1rem;
                     padding-top: 2rem;
-                    background: url("/aqui.png");
-                    background-size: 6rem;
+                    background: url("/raios.png");
+                    background-size: 5rem;
                     background-repeat: no-repeat;
                     background-position: top;
                     a {
@@ -110,6 +156,9 @@ export const Quadros = styled.nav`
                         font-size: 2.5rem;
                         text-decoration: none;
                         color: ${colors.branco};
+                        background-color: ${colors.blue};
+                        border-radius: 1rem;
+                        padding: 0.2rem 0.4rem;
                     }
                 }
             }

@@ -11,7 +11,7 @@ export function saiba_mais() {
         </li>
         <li>
           <nav id="itens">
-            <S.Quadros>
+            <S.Quadros data-aos="AnimaE">
                 <ul id="main">
                     <li>
                       <h2>Fale conosco!</h2>
@@ -53,7 +53,7 @@ export function saiba_mais() {
                   </ul>
             </S.Quadros>
             <S.Espaco/>
-            <S.Quadros>
+            <S.Quadros data-aos="AnimaD">
                 <ul>
                     <li>
                       <h2>Nos acompanhe!</h2>

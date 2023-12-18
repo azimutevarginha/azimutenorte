@@ -11,10 +11,10 @@ export function ProgAz() {
         <>
             <S.Main>
                 <ul id="main">
-                    <S.Top>
+                    <S.Top data-aos="Anima">
                         <ul id="cont">
                             <li id="Texto">
-                                <div>
+                                <div data-aos="AnimaT">
                                     <ul id="Titulo">
                                         <li>
                                             <h1>Programa Azimute Norte</h1>
@@ -30,24 +30,24 @@ export function ProgAz() {
                                 <S.Espaco />
                             </li>
                             <li id="Img">
-                                <div>
+                                <div data-aos="AnimaI">
                                     <S.Espacinho />
-                                    <img src={Az} alt="Logo" data-aos="fade-up" />
+                                    <img src={Az} alt="Logo"/>
                                 </div>
                             </li>
                         </ul>
                     </S.Top>
 
-                    <S.Mid>
+                    <S.Mid data-aos="Anima">
                         <ul id="cont">
                             <li id="Img">
-                                <div>
+                                <div data-aos="AnimaI">
                                     <S.Espacinho />
-                                    <img src={Nadia} alt="Nádia [foto]" data-aos="fade-up"/>
+                                    <img src={Nadia} alt="Nádia [foto]"/>
                                 </div>
                             </li>
                             <li id="Texto">
-                                <div>
+                                <div data-aos="AnimaT">
                                     <ul id="texto">
                                         <li>
                                             <h3>Onde surgiu?</h3>
@@ -65,10 +65,10 @@ export function ProgAz() {
                         </ul>
                     </S.Mid>
 
-                    <S.Und>
+                    <S.Und data-aos="Anima">
                         <ul id="cont">
                             <li id="Texto">
-                                <div>
+                                <div data-aos="AnimaT">
                                     <ul id="texto">
                                         <li>
                                             <h3>Como funciona?</h3>
@@ -84,24 +84,24 @@ export function ProgAz() {
                                 <S.Espaco />
                             </li>
                             <li id="Img">
-                                <div>
+                                <div data-aos="AnimaI">
                                     <S.Espacinho />
-                                    <img src={Dupla} alt="Dupla fazendo exercícios [Ilustração]" data-aos="fade-up"/>
+                                    <img src={Dupla} alt="Dupla fazendo exercícios [Ilustração]"/>
                                 </div>
                             </li>
                         </ul>
                     </S.Und>
 
-                    <S.Part>
+                    <S.Part data-aos="Anima">
                         <ul id="cont">
                             <li id="Img">
-                                <div>
+                                <div data-aos="AnimaI">
                                     <S.Espacinho />
-                                    <img src={Pessoas} alt="Pessoas participando [Ilustração]"data-aos="fade-up" />
+                                    <img src={Pessoas} alt="Pessoas participando [Ilustração]"/>
                                 </div>
                             </li>
                             <li id="Texto">
-                                <div>
+                                <div data-aos="AnimaT">
                                     <ul id="Titulo">
                                         <li>
                                             <h1>Participe</h1>

@@ -1,5 +1,12 @@
 import styled from "styled-components"
 import { colors } from "../../styles/GlobalStyle"
+import AOS from 'aos'
+import 'aos/dist/aos.css'
+
+AOS.init({
+    once: false, 
+    mirror: true
+});
 
 export const Main = styled.nav`
     padding: 1rem;
@@ -89,6 +96,64 @@ export const Main = styled.nav`
         h2 {
             font-family: "Alatsi";
             font-size: 2rem;
+        }
+    }
+
+    [data-aos="Anima"] {
+        @media(min-width: 1180px){
+            opacity: 0;
+            filter: blur(5px);
+            transform: translateY(100%);
+            transition: all;
+
+            &.aos-animate {
+                opacity: 1;
+                filter: blur(0);
+                transform: translateY(0);
+                transition-duration: 2000ms;
+            }
+        }
+    }
+
+    [data-aos="AnimaI"] {
+        @media(max-width: 1180px){
+            opacity: 0;
+            filter: blur(5px);
+            transform: translateX(100%);
+            transition: all;
+
+            &.aos-animate {
+                opacity: 1;
+                filter: blur(0);
+                transform: translateX(0);
+                @media(min-width: 840px){
+                    transition-duration: 2000ms;
+                }
+            }
+        }
+        @media(max-width: 840px){
+            transition-duration: 1000ms;
+        }
+    }
+
+    [data-aos="AnimaT"] {
+        @media(max-width: 1180px){
+            opacity: 0;
+            filter: blur(5px);
+            transform: translateX(-100%);
+            transition: all;
+
+            &.aos-animate {
+                opacity: 1;
+                filter: blur(0);
+                transform: translateX(0);
+                @media(min-width: 840px){
+                    transition-duration: 2000ms;
+                }
+            }
+        }
+        @media(max-width: 840px){
+            transition-duration: 1000ms;
         }
     }
 
