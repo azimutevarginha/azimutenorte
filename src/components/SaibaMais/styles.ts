@@ -8,6 +8,8 @@ AOS.init({
 });
 
 export const SaibaM = styled.nav`
+    overflow: hidden;
+
     [data-aos="AnimaD"] {
         opacity: 0;
         filter: blur(5px);

@@ -9,6 +9,7 @@ AOS.init({
 });
 
 export const Main = styled.nav`
+    overflow: hidden;
     padding: 1rem;
     height: 100%;
     padding-top: 2rem;
