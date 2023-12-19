@@ -1,4 +1,3 @@
-import React from "react"
 import * as s from "./style"
 
 export interface INoticia {

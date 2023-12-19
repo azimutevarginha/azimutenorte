@@ -1,13 +1,13 @@
 import * as style from "./style"
 import jornal from "../../img/jornal.png"
 
-export interface INoticia{
+interface Noticia{
     title: string
     main: string
     date: string
 }
 
-export function Noticia({title, main, date}: INoticia){
+export function Noticia({title, main, date}: Noticia){
 
     
 
@@ -31,6 +31,3 @@ export function Noticia({title, main, date}: INoticia){
     )
 }
 
-function setUTCDate(date: Date) {
-    throw new Error("Function not implemented.")
-}

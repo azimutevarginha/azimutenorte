@@ -7,14 +7,12 @@ export function Write(){
 
     const navigate = useNavigate()
 
-    const[title, setTitle] = useState()
-    const[lead, setLead] = useState()
-    const[main, setMain] = useState()
+    const[title, setTitle] = useState<string>('')
+    const[lead, setLead] = useState<string>('')
+    const[main, setMain] = useState<string>('')
 
     const createArticle = async (e: FormEvent) => {
         e.preventDefault();
-        
-
         const data = {
             title, 
             lead, 

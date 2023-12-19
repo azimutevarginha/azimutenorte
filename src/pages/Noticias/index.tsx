@@ -2,11 +2,12 @@ import * as s from "./style"
 import jornal from "../../img/jornal.png"
 import { Noticia } from "../../components"
 import { usePosts } from "../../services/data/Posts"
+import { INoticia } from "../../interfaces/noticia.interface"
 
 
 export function Noticias(){
 
-    const posts = usePosts()
+    const posts: INoticia[] = usePosts()
 
     
     /*const current*/
