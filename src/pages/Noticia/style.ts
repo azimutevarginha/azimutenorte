@@ -12,7 +12,7 @@ export const Noticia = styled.article`
         
     }
     #noticias{
-        width: 1265px;
+        width: 75vw;
         height: 100%;
         background-color: white;
         box-shadow: 1px 1px 5px 1px black;
@@ -48,5 +48,17 @@ export const Noticia = styled.article`
         padding: 30px;
         text-align: end;
         color: ${colors.blue}
+    }
+
+    @media (max-width: 844px) {
+        img{
+            display: none;
+        }
+        #noticias{
+            width: 90%;
+            display: grid;
+            grid-template-columns: auto;
+        }
+        
     }
 `

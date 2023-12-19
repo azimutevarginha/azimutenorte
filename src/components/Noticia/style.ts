@@ -20,8 +20,8 @@ export const Noticia = Styled.article`
     
     padding: 30px;
 
-    width: calc(100vw - 40vw);
-    height: calc(100vh - 65vh);
+    width: calc(100vw - 65vw);
+    height: calc(100vh - 55vh);
     border: solid 1px ${colors.azul};
     display: flex;
     flex-direction: column;
@@ -44,5 +44,15 @@ export const Noticia = Styled.article`
     .ler_mais:hover{
             cursor: pointer;
         }
+
+    @media (max-width: 844px){
+        width: calc(100vw - 30vw);
+        h1{
+            font-size: 1.3rem;
+        }
+        p{
+            font-size: 1rem;
+        }
+    }
 `
 

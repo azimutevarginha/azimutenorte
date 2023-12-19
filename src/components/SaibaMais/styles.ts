@@ -57,7 +57,7 @@ export const SaibaM = styled.nav`
     justify-content: center;
     padding-top: 3rem;
     height: 100%;
-    width: 100vw;
+    width: 100%;
     ul {
         list-style-type: none;
         width: 100%;

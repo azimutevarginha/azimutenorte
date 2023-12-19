@@ -18,9 +18,10 @@ export const Noticias = styled.main`
         @media (max-width: 844px) {
             background-color: transparent;
             box-shadow: 0 0 0 0 transparent;
-                header img{
-                    display: none;
-                }
+            header img{
+                display: none;
+            }
+
             }
         header{
             width: 100%;
@@ -48,7 +49,11 @@ export const Noticias = styled.main`
             width: 100%;
             height: 79.5%;
             display: grid;
+            grid-template-columns: auto auto;
             justify-content: space-evenly;
+            @media (max-width: 844px) {
+                grid-template-columns: auto; 
+            }
         }
     }
 `
