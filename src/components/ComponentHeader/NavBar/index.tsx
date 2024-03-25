@@ -11,6 +11,9 @@ export const linksSobre = ["/orientacao", "/programa"]
 export const titulosArtigos = ["Notícias"];
 export const linksArtigos = ["./noticias"]
 
+export const titulosCompets = ["Competições"];
+export const linksCompets = ["./competicoes"]
+
 
 export function NavBar(){
 
@@ -22,6 +25,7 @@ export function NavBar(){
                 <ul className="Nav">
                     <Gaveta categoria="SOBRE" titulos={titulosSobre} links={linksSobre}/>
                     <Gaveta categoria="ARTIGOS" titulos={titulosArtigos} links={linksArtigos}/>
+                    <Gaveta categoria="EVENTOS" titulos={titulosCompets} links={linksCompets}/>
                 </ul>
                 <a href="/participe" className="participe">PARTICIPE!</a>
             </section>

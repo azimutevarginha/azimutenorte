@@ -19,6 +19,7 @@ export const Main = styled.nav`
     justify-content: center;
     display: flex;
     flex-direction: column;
+    flex: 1;
 
     [data-aos="Anima"] {
         @media (min-width: 1060px){

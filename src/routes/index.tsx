@@ -30,6 +30,7 @@ export function RouteSoftware(){
                 <Route path="noticias" element={<pages.PageNoticias/>}/>
                 {rotas}
             </Route>
+            <Route path="/competicoes" element={<pages.Competicoes/>}/>
             <Route path="/participe" element={<pages.Participe/>}/>
             <Route path="/login" element={<pages.PageLogin/>}/>
             <Route element={<ProtectedRoute/>}>
