@@ -13,6 +13,9 @@ export const Main = styled.main`
     flex-direction: column;
     flex: 1;
     list-style-type: none;
+`
+
+export const Body = styled.body`
     height: 100rem;
     background-image: url('/competidora.png');
     background-repeat: no-repeat;

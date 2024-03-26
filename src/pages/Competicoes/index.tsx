@@ -1,13 +1,20 @@
 import * as S from './styles'
 import Podio from '../../img/podio.png'
-import { ComponentHeader, ComponentFooter, ComponentSaibaMais} from "../../components"
+import { ICompet } from '../../interfaces/competicao.interface'
+import { usePosts } from "../../services/data/Posts"
+import { Compet } from "../../components"
+import { ComponentHeader, ComponentFooter, ComponentSaibaMais } from "../../components"
 
-export function Compets(){
-    return(
+
+export function Compets() {
+
+    const posts: ICompet[] = usePosts()
+
+    return (
         <>
-        <ComponentHeader/>
-        <S.Main>
-             <S.Top data-aos="Anima">
+            <ComponentHeader />
+            <S.Main>
+                <S.Top data-aos="Anima">
                     <li>
                         <div id="Titulo" data-aos="Esquerda">
                             <h1>Competições</h1>
@@ -15,12 +22,19 @@ export function Compets(){
                         </div>
                     </li>
                     <li>
-                        <img src={Podio} alt="Pódio [Ilustração]" data-aos="Direita"/>
+                        <img src={Podio} alt="Pódio [Ilustração]" data-aos="Direita" />
                     </li>
                 </S.Top>
-        </S.Main>
-        <ComponentSaibaMais/>
-        <ComponentFooter/>
+                <main>
+                    <ul>
+                        {posts.map((post) => (
+                            <Compet key={post.index} title={post.title} lead={post.lead} />
+                        ))}
+                    </ul>
+                </main>
+            </S.Main>
+            <ComponentSaibaMais />
+            <ComponentFooter />
         </>
     )
 }
