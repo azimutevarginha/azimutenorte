@@ -15,9 +15,9 @@ export const usePosts = () => {
         }
     }
 
-        useEffect(() => {
-            getPosts()
-        }, [])
+    useEffect(() => {
+        getPosts()
+    }, [])
 
     return posts;
 

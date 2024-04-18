@@ -15,7 +15,7 @@ export const Main = styled.main`
     list-style-type: none;
 `
 
-export const Body = styled.body`
+export const Corpo = styled.body`
     height: 100rem;
     background-image: url('/competidora.png');
     background-repeat: no-repeat;

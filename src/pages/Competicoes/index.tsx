@@ -1,8 +1,8 @@
 import * as S from './styles'
 import Podio from '../../img/podio.png'
 import { ICompet } from '../../interfaces/competicao.interface'
+import { Competicao } from '../../components'
 import { usePosts } from "../../services/data/Posts"
-import { Compet } from "../../components"
 import { ComponentHeader, ComponentFooter, ComponentSaibaMais } from "../../components"
 
 
@@ -25,14 +25,17 @@ export function Compets() {
                         <img src={Podio} alt="Pódio [Ilustração]" data-aos="Direita" />
                     </li>
                 </S.Top>
+            </S.Main>
+            <S.Corpo>
                 <main>
                     <ul>
                         {posts.map((post) => (
-                            <Compet key={post.index} title={post.title} lead={post.lead} />
+                            <Competicao key={post.index} nome={post.nome} data={post.data} linkBoletim={post.linkBoletim}
+                            arqBoletim={post.arqBoletim} linkInscricao={post.linkInscricao}/>
                         ))}
                     </ul>
                 </main>
-            </S.Main>
+            </S.Corpo>
             <ComponentSaibaMais />
             <ComponentFooter />
         </>

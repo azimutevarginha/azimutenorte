@@ -1,9 +1,11 @@
 export interface ICompet{
     index: number
-    title: string
-    main: string
-    lead: string
-    date: string
+    nome: string
+    data: Date
+    descricao: string
+    linkBoletim: string
+    arqBoletim: string
+    linkInscricao:string
     updated_at: string
     url: string
 }
