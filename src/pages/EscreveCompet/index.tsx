@@ -11,10 +11,11 @@ export function EscreveCompet() {
     const [descricao, setDescricao] = useState<string>('')
     const [date, setData] = useState<object>()
     const [link, setLink] = useState<string>('')
-    const [arq, setArq] = useState<string>('')
+    const [arq, setArq] = useState<File>()
 
     const createCompet = async (events: FormEvent) => {
         events.preventDefault();
+
         const data = {
             nome,
             descricao,
@@ -24,7 +25,7 @@ export function EscreveCompet() {
         };
         console.log("Competição cadastrada com sucesso!")
 
-        await api.post("/write", data)
+        await api.post("/escreve_competicao", data)
         navigate('/competicoes')
     }
 
@@ -38,6 +39,9 @@ export function EscreveCompet() {
             throw new Error('Valores inválidos');
         return data;
     }
+
+   
+
     return (
         <S.EscreveComp>
             <h3>Nova notícia</h3>
@@ -55,16 +59,16 @@ export function EscreveCompet() {
                     <textarea name="main" id="main" cols={100} rows={10} onChange={(events) => setDescricao(events.target.value)} />
                 </div>
                 <div>
-                    <label htmlFor="file">Upload do Boletim {"(PDF)"}</label>
-                    <input type="file" accept=".pdf" onChange={(events) => setArq(events.target.value)} />
+                    <label htmlFor="link">Link do Boletim online:</label>
+                    <input type="file" name="Boletim Oficial" required onChange={(events) => setArq(events.target.files![0])} />
                 </div>
                 <div>
                     <label htmlFor="link">Link do Boletim online:</label>
                     <input type="text" name="link" onChange={(events) => setLink(events.target.value)} />
                 </div>
-                <p>
-                    <button type="submit">Postar</button>
-                </p>
+                
+                    <button type="submit">Cadastrar</button>
+            
             </form>
         </S.EscreveComp>
     )

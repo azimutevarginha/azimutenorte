@@ -3,7 +3,7 @@ import api from "../../services/api"
 import { FormEvent, useState } from "react"
 import { useNavigate } from "react-router-dom"
 
-export function Write(){
+export function EscreveNoti(){
 
     const navigate = useNavigate()
 
@@ -20,7 +20,7 @@ export function Write(){
         };
         console.log("Notícia enviada com sucesso!")
 
-        await api.post("/write", data)
+        await api.post("/escreve_article", data)
         navigate('/noticias')
     }
 

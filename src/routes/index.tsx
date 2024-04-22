@@ -1,14 +1,14 @@
 import { Routes, Route } from "react-router-dom"
 import * as pages from "../pages"
 import ProtectedRoute from "./ProtectedRoute"
-import { usePosts } from "../services/data/Posts"
+import { usePostsArticle, usePostsCompet } from "../services/data/Posts"
 import { INoticia } from "../interfaces/noticia.interface"
 import { ICompet } from "../interfaces/competicao.interface"
 
 export function RouteSoftware() {
 
-    const posts: INoticia[] = usePosts();
-    const compets: ICompet[] = usePosts();
+    const posts: INoticia[] = usePostsArticle();
+    const compets: ICompet[] = usePostsCompet();
 
     const rotasNot = []
     const rotasCompet = []
@@ -50,7 +50,8 @@ export function RouteSoftware() {
             <Route path="/participe" element={<pages.Participe />} />
             <Route path="/login" element={<pages.PageLogin />} />
             <Route element={<ProtectedRoute />}>
-                <Route path="/escrever" element={<pages.PageWrite />} />
+                <Route path="/escrever_article" element={<pages.PageEscreveArticle/>} />
+                <Route path="/escrever_competicao" element={<pages.PageEscreveCompeticao/>} />
             </Route>
         </Routes>
     )

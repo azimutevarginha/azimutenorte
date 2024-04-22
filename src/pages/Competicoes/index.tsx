@@ -2,13 +2,13 @@ import * as S from './styles'
 import Podio from '../../img/podio.png'
 import { ICompet } from '../../interfaces/competicao.interface'
 import { Competicao } from '../../components'
-import { usePosts } from "../../services/data/Posts"
+import { usePostsCompet } from "../../services/data/Posts"
 import { ComponentHeader, ComponentFooter, ComponentSaibaMais } from "../../components"
 
 
 export function Compets() {
 
-    const posts: ICompet[] = usePosts()
+    const posts: ICompet[] = usePostsCompet()
 
     return (
         <>

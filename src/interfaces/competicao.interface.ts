@@ -4,7 +4,7 @@ export interface ICompet{
     data: Date
     descricao: string
     linkBoletim: string
-    arqBoletim: string
+    arqBoletim: File
     linkInscricao:string
     updated_at: string
     url: string

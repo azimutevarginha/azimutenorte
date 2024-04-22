@@ -5,7 +5,7 @@ export interface ICompeticao { // Informações que toda competição cadastrada
     nome: string
     data: Date
     linkBoletim: string
-    arqBoletim: string
+    arqBoletim: File
     linkInscricao: string
 }
 

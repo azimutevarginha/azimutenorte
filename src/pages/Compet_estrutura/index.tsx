@@ -6,7 +6,7 @@ interface Compet_estrutura {
     data: Date
     descricao: string
     linkBoletim: string
-    arqBoletim: string
+    arqBoletim: File
     linkInscricao: string
     update: string
 }
