@@ -8,8 +8,6 @@ import { INoticia } from "../../interfaces/noticia.interface"
 export function Noticias(){
 
     const posts: INoticia[] = usePostsArticle()
-
-    
     /*const current*/
 
     return(

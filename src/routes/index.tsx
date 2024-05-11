@@ -38,14 +38,13 @@ export function RouteSoftware() {
         <Routes>
             <Route path="/" element={<pages.PageLayout />}>
                 <Route path="" element={<pages.ProgramaAz />} />
-                <Route path="/programa" element={<pages.ProgramaAz />} />
-                <Route path="/orientacao" element={<pages.EsporteOri />} />
-                <Route path="competicoes" element={<pages.Competicoes />} />
-                {rotasCompet}
+                <Route path="programa" element={<pages.ProgramaAz />} />
+                <Route path="orientacao" element={<pages.EsporteOri />} />
                 <Route path="noticias" element={<pages.PageNoticias />} />
                 {rotasNot}
             </Route>
             <Route path="/competicoes" element={<pages.Competicoes />} />
+                {rotasCompet}
 
             <Route path="/participe" element={<pages.Participe />} />
             <Route path="/login" element={<pages.PageLogin />} />

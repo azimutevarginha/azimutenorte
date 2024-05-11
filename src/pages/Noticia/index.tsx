@@ -9,8 +9,6 @@ interface Noticia{
 
 export function Noticia({title, main, date}: Noticia){
 
-    
-
     return(
         <style.Noticia>
             <div id="template">

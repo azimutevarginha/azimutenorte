@@ -23,13 +23,13 @@ export const usePostsArticle = () => {
 }
 
 export const usePostsCompet = () => {
-    const [posts, setPosts] = useState([])
+    const [comps, setComps] = useState([])
 
     const getPosts = async() => {
         try{
             const response = await api.get("/ler_competicao");
             const data = response.data;
-            setPosts(data)
+            setComps(data)
         }catch(error){
             console.log(error);
         }
@@ -39,7 +39,7 @@ export const usePostsCompet = () => {
         getPosts()
     }, [])
 
-    return posts;
+    return comps;
 
 }
 
