@@ -19,10 +19,10 @@ export function Compet_estruct({ nome, data, descricao, linkBoletim, arqBoletim,
         <S.Comp>
             <div id="template">
                 <div id="competicoes">
-                    <header>
+                    <div id='Compet'>
                         <h1>{nome}</h1>
                         <h2>Data: {" "} {date}</h2>
-                    </header>
+                    </div>
                     <main>
                         <p>{descricao}</p>
                     </main>

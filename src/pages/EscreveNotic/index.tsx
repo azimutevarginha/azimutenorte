@@ -20,7 +20,7 @@ export function EscreveNoti(){
         };
         console.log("Notícia enviada com sucesso!")
 
-        await api.post("/escreve_article", data)
+        await api.post("/escrever_article", data)
         navigate('/noticias')
     }
 
@@ -28,7 +28,7 @@ export function EscreveNoti(){
 
     return(
         <style.WriteContainer>
-            <h3>Nova notícia</h3>
+            <h3>Nova notícia:</h3>
             <form onSubmit={(e) => createArticle(e)}>
                 <div>
                     <label htmlFor="title">Titulo:</label>

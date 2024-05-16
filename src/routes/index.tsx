@@ -49,6 +49,7 @@ export function RouteSoftware() {
             <Route path="/participe" element={<pages.Participe />} />
             <Route path="/login" element={<pages.PageLogin />} />
             <Route element={<ProtectedRoute />}>
+                <Route path="/administrador" element={<pages.PageAdm/>} />
                 <Route path="/escrever_article" element={<pages.PageEscreveArticle/>} />
                 <Route path="/escrever_competicao" element={<pages.PageEscreveCompeticao/>} />
             </Route>

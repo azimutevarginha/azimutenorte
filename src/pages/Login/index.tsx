@@ -24,7 +24,7 @@ export function Login(){
             email: String(email),
             password: String(password),
         })
-        navigate('/escrever')
+        navigate('/administrador')
         } catch (error) {
         const err = error as AxiosError<IErrorResponse>
         toast.error(String(err.response?.data))

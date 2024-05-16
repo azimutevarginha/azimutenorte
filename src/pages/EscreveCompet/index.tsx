@@ -25,26 +25,26 @@ export function EscreveCompet() {
         };
         console.log("Competição cadastrada com sucesso!")
 
-        await api.post("/escreve_competicao", data)
+        await api.post("/escrever_competicao", data)
         navigate('/competicoes')
     }
 
-    function textoParaData (texto:string) { // Aqui será passado a data em formato de string para ser convertida para o tipo Dte
+    function textoParaData(texto: string) { // Aqui será passado a data em formato de string para ser convertida para o tipo Dte
         let datinha = texto.match(/^(\d{2})\/(\d{2})\/(\d{4})$/); // Verifica se a data está no formato dd/MM/aaaa
-        if (! datinha)
+        if (!datinha)
             throw new Error('Deve estar no formato dd/mm/aaaa');
-        let [dia, mes, ano] = datinha.slice(1,4).map(v => parseInt(v));
+        let [dia, mes, ano] = datinha.slice(1, 4).map(v => parseInt(v));
         let data = new Date(ano, mes - 1, dia);
         if (data.getDate() !== dia || data.getMonth() + 1 !== mes || data.getFullYear() !== ano)
             throw new Error('Valores inválidos');
         return data;
     }
 
-   
+
 
     return (
         <S.EscreveComp>
-            <h3>Nova notícia</h3>
+            <h3>Nova competição:</h3>
             <form onSubmit={(events) => createCompet(events)}>
                 <div>
                     <label htmlFor="title">Nome:</label>
@@ -66,9 +66,9 @@ export function EscreveCompet() {
                     <label htmlFor="link">Link do Boletim online:</label>
                     <input type="text" name="link" onChange={(events) => setLink(events.target.value)} />
                 </div>
-                
-                    <button type="submit">Cadastrar</button>
-            
+
+                <button type="submit">Cadastrar</button>
+
             </form>
         </S.EscreveComp>
     )
