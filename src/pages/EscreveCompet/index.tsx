@@ -47,20 +47,20 @@ export function EscreveCompet() {
             <h3>Nova competição:</h3>
             <form onSubmit={(events) => createCompet(events)}>
                 <div>
-                    <label htmlFor="title">Nome:</label>
-                    <input type="text" name="title" id="title" onChange={(events) => setNome(events.target.value)} />
+                    <label htmlFor="nome">Nome:</label>
+                    <input type="text" name="nome" id="title" onChange={(events) => setNome(events.target.value)} />
                 </div>
                 <div>
                     <label htmlFor="date">Data da competição:</label>
                     <input type="date" name="date" onChange={(events) => setData(textoParaData(events.target.value))} />
                 </div>
                 <div>
-                    <div><label htmlFor="main">Descrição:</label></div>
+                    <div><label htmlFor="descricao">Descrição:</label></div>
                     <textarea name="main" id="main" cols={100} rows={10} onChange={(events) => setDescricao(events.target.value)} />
                 </div>
                 <div>
-                    <label htmlFor="link">Link do Boletim online:</label>
-                    <input type="file" name="Boletim Oficial" required onChange={(events) => setArq(events.target.files![0])} />
+                    <label htmlFor="arq">Link do Boletim online:</label>
+                    <input type="file" name="arq" required onChange={(events) => setArq(events.target.files![0])} />
                 </div>
                 <div>
                     <label htmlFor="link">Link do Boletim online:</label>
